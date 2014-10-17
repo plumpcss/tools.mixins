@@ -1,0 +1,17 @@
+{
+  "name": "plumpcss-mixins",
+  "version": "0.1.0",
+  "authors": [
+    "James Martin-Davies <jamesmd@plumpdigital.co.uk>"
+  ],
+  "description": "Curated collection of helpful mixins.",
+  "main": "_tools.mixins.scss",
+  "keywords": [
+    "plumpcss",
+    "oocss",
+    "css",
+    "tools"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.plumpdigital.co.uk/"
+}
