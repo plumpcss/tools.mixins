@@ -109,3 +109,16 @@
 	#{$attribute}: $solid-color;
 	#{$attribute}: $color;
 }
+
+
+
+//    Background image PNG fallback support prefixed with .svg and .png
+//    Used in conjunction with the asset function (dependency).
+//
+//    .selector {
+//        @include img('logo');
+//    }
+@mixin img($name) {
+  background-image: img($name + '.png');
+  background-image: img($name + '.svg'), none;
+}
