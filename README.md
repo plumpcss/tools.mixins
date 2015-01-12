@@ -1,4 +1,4 @@
-# Media
+# Mixins
 
 Curated collection of helpful mixins for production.
 
