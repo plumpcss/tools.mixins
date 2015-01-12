@@ -109,30 +109,3 @@
 	#{$attribute}: $solid-color;
 	#{$attribute}: $color;
 }
-
-
-
-
-
-//    Simplify URL declarations for images and fonts.
-//    http://css-tricks.com/snippets/sass/simple-asset-helper-functions/
-//
-//    You can declare declarations like so:
-// 
-//    .selector {
-//        background-image: image('logo.png'), none;
-//        background-image: image('logo.svg');
-//    }
-$plump-asset-base-path: '..'                !default;
-
-@function asset($type, $file) {
-  @return url($plump-asset-base-path + '/' + $type + '/' + $file);
-}
-
-@function image($file) {
-  @return asset('images', $file);
-}
-
-@function font($file) {
-  @return asset('fonts', $file);
-}
