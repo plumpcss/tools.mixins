@@ -119,6 +119,6 @@
 //        @include img('logo');
 //    }
 @mixin img($name) {
-  background-image: img($name + '.png');
-  background-image: img($name + '.svg'), none;
+	background-image: img($name + '.png');
+	background-image: img($name + '.svg'), none;
 }
