@@ -119,16 +119,19 @@
 //    .selector {
 //        @include img('../images/logo');
 //    }
+//
+//    If we don't want to use the PNG fallback, we can simply pass `false`
+//    as the second parameter.
+//    .selector {
+//        @include img('../images/logo', false);
+//    }
 
-$plump-enable-png-fallback: true;
+@mixin img($name, $plump-enable-png-fallback: true) {
 
-@mixin img($name) {
-	
-	@if ($plump-enable-png-fallback) {
+	@if ($plump-enable-png-fallback == true) {
 		background-image: url($name + '.png');
 		background-image: url($name + '.svg'), none;
-	} 
-	@else {
+	} @else {
 		background-image: url($name + '.svg'), none;
 	}
 }
