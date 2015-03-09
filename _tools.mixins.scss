@@ -120,7 +120,16 @@
 //    .selector {
 //        @include img('logo');
 //    }
+
+$plump-enable-png-fallback: true;
+
 @mixin img($name) {
-	background-image: img($name + '.png');
-	background-image: img($name + '.svg'), none;
+	
+	@if ($plump-enable-png-fallback) {
+		background-image: url($name + '.png');
+		background-image: url($name + '.svg'), none;
+	} 
+	@else {
+		background-image: url($name + '.svg'), none;
+	}
 }
