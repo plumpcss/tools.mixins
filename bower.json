@@ -1,8 +1,9 @@
 {
   "name": "plumpcss-mixins",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "authors": [
-    "James Martin-Davies <jamesmd@plumpdigital.co.uk>"
+    "James Martin-Davies <jamesmd@plumpdigital.co.uk>",
+    "Jon Hurrell <jon@plumpdigital.co.uk>"
   ],
   "description": "Curated collection of helpful mixins.",
   "main": "_tools.mixins.scss",
